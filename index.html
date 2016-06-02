@@ -41,7 +41,7 @@ var quotes = [
   "This will change the character of the neighborhood.",
   "There will be too much thru traffic as people take shortcuts.",
   "This will put a strain on public infrastructure.",
-  "This will cause congestion at <some intersection>.",
+  "This will cause congestion at some intersection.",
   "Our schools will become overcrowded."
 ];
 
@@ -70,6 +70,14 @@ $( ".quote21" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
 $( ".quote22" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
 $( ".quote23" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
   </script>
+  
+    <script>
+    $( ".quote" ).click(function() {
+      $( this ).css('background-color', 'black');
+      $( this ).css('font-color', 'white');
+    });
+  </script>
+  
   <link rel="stylesheet" type="text/css" href="css.css">
   
 </head>
