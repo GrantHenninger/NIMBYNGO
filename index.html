@@ -17,63 +17,85 @@
   <script type="text/javascript" src="squareThis.js"></script>
 
   <script type="text/javascript">
-var quotes = [
-  "Won't somebody please think of the children",
-  "The problem is that these people",
-  "It's not our job to come up with a solution",
-  "There are empty beds in the shelters",
-  "As a property owner",
-  "Nobody should have to live like that",
-  "Quality of life issue",
-  "They are choosing not to go to the shelters and connect with services",
-  "I don't have a problem with homeless people, but…",
-  "Getting rid of lanes will cause traffic to get worse.",
-  "We need to slow this process down.",
-  "I have nothing against renters, but...",
-  "Where are we going to park",
-  "I've lived here for ## of years, and I think…",
-  "People will park on the street",
-  "This isn't famous european city",
-  "This isn't neighboring city",
-  "It's not realistic to expect people to take the bus/bike/walk",
-  "Why are we doing X? Fix the roads first!",
-  "In the pocket of developers",
-  "This will turn us into Manhattan. (Manhattanization.)",
-  "There isn't enough parking",
-  "This will change the character of the neighborhood.",
-  "There will be too much thru traffic as people take shortcuts.",
-  "This will put a strain on public infrastructure.",
-  "This will cause congestion at some intersection.",
-  "Our schools will become overcrowded."
-];
+    var quotes = [
+      "Won't somebody please think of the children",
+      "The problem is that these people",
+      "It's not our job to come up with a solution",
+      "There are empty beds in the shelters",
+      "As a property owner",
+      "Nobody should have to live like that",
+      "Quality of life issue",
+      "They are choosing not to go to the shelters and connect with services",
+      "I don't have a problem with homeless people, but…",
+      "Getting rid of lanes will cause traffic to get worse.",
+      "We need to slow this process down.",
+      "I have nothing against renters, but...",
+      "Where are we going to park",
+      "I've lived here for ## of years, and I think…",
+      "People will park on the street",
+      "This isn't famous european city",
+      "This isn't neighboring city",
+      "It's not realistic to expect people to take the bus/bike/walk",
+      "Why are we doing X? Fix the roads first!",
+      "In the pocket of developers",
+      "This will turn us into Manhattan. (Manhattanization.)",
+      "There isn't enough parking",
+      "This will change the character of the neighborhood.",
+      "There will be too much thru traffic as people take shortcuts.",
+      "This will put a strain on public infrastructure.",
+      "This will cause congestion at some intersection.",
+      "Our schools will become overcrowded."
+    ];
 
-$( ".quote0" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote1" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote2" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote3" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote4" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote5" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote6" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote7" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote8" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote9" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote10" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote11" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote12" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote13" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote14" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote15" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote16" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote17" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote18" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote19" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote20" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote21" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote22" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
-$( ".quote23" ).html( quotes[Math.floor(Math.random() * quotes.length)] );
+    // Thanks Stack Overflow! http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+
+  shuffle(quotes);
+  
+    $( ".quote0" ).html( quotes[0] );
+    $( ".quote1" ).html( quotes[1] );
+    $( ".quote2" ).html( quotes[2] );
+    $( ".quote3" ).html( quotes[3] );
+    $( ".quote4" ).html( quotes[4] );
+    $( ".quote5" ).html( quotes[5] );
+    $( ".quote6" ).html( quotes[6] );
+    $( ".quote7" ).html( quotes[7] );
+    $( ".quote8" ).html( quotes[8] );
+    $( ".quote9" ).html( quotes[9] );
+    $( ".quote10" ).html( quotes[10] );
+    $( ".quote11" ).html( quotes[11] );
+    $( ".quote12" ).html( quotes[12] );
+    $( ".quote13" ).html( quotes[13] );
+    $( ".quote14" ).html( quotes[14] );
+    $( ".quote15" ).html( quotes[15] );
+    $( ".quote16" ).html( quotes[16] );
+    $( ".quote17" ).html( quotes[17] );
+    $( ".quote18" ).html( quotes[18] );
+    $( ".quote19" ).html( quotes[19] );
+    $( ".quote20" ).html( quotes[20] );
+    $( ".quote21" ).html( quotes[21] );
+    $( ".quote22" ).html( quotes[22] );
+    $( ".quote23" ).html( quotes[23] );
   </script>
   
-    <script>
+ <script>
     $( ".quote" ).click(function() {
       $( this ).css('background-color', 'black');
       $( this ).css('font-color', 'white');
