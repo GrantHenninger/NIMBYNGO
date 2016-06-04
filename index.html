@@ -67,43 +67,26 @@
       return array;
     }
 
-  shuffle(quotes);
-  
-    $( ".quote0" ).html( quotes[0] );
-    $( ".quote1" ).html( quotes[1] );
-    $( ".quote2" ).html( quotes[2] );
-    $( ".quote3" ).html( quotes[3] );
-    $( ".quote4" ).html( quotes[4] );
-    $( ".quote5" ).html( quotes[5] );
-    $( ".quote6" ).html( quotes[6] );
-    $( ".quote7" ).html( quotes[7] );
-    $( ".quote8" ).html( quotes[8] );
-    $( ".quote9" ).html( quotes[9] );
-    $( ".quote10" ).html( quotes[10] );
-    $( ".quote11" ).html( quotes[11] );
-    $( ".quote12" ).html( quotes[12] );
-    $( ".quote13" ).html( quotes[13] );
-    $( ".quote14" ).html( quotes[14] );
-    $( ".quote15" ).html( quotes[15] );
-    $( ".quote16" ).html( quotes[16] );
-    $( ".quote17" ).html( quotes[17] );
-    $( ".quote18" ).html( quotes[18] );
-    $( ".quote19" ).html( quotes[19] );
-    $( ".quote20" ).html( quotes[20] );
-    $( ".quote21" ).html( quotes[21] );
-    $( ".quote22" ).html( quotes[22] );
-    $( ".quote23" ).html( quotes[23] );
+    shuffle(quotes);
+
+    $(document).ready(function () {
+        for (n = 0; n < 24; n++) {
+            console.log(quotes[n]);
+            $( ".quote" + n ).html( quotes[n] );
+        }
+    });
+
   </script>
-  
+
  <script>
     $( ".quote" ).click(function() {
       $( this ).css('background-color', 'black');
       $( this ).css('font-color', 'white');
     });
   </script>
-  
+
   <link rel="stylesheet" type="text/css" href="css.css">
-  
+
 </head>
 
 <body>
