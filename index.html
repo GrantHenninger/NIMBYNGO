@@ -78,9 +78,11 @@
   </script>
 
  <script>
-    $( ".quote" ).click(function() {
-      $( this ).css('background-color', 'black');
-      $( this ).css('font-color', 'white');
+    $(document).ready(function() {
+      $( ".quote" ).click(function() {
+        $( this ).css('background-color', '#000000');
+        $( this ).css('color', '#FFFFFF');
+      });
     });
   </script>
 
@@ -128,7 +130,7 @@
     <div class="quote quote11"></div>
 </div>
 <div class="square">
-    <div class="quote">Free Square!</div>
+    <div class="quote" style="background-color:#000000; color:#FFFFFF">Free Square!</div>
 </div>
 <div class="square">
     <div class="quote quote12"></div>
