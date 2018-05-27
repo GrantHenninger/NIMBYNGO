@@ -26,6 +26,7 @@ a {
   text-align:center;
   vertical-align:middle;
   font-size:24px;
+  font-weight:bold;
 }
 
 #title {
@@ -48,11 +49,11 @@ a {
   }
 
 @media only screen and (max-height: 1000px) and (min-height: 801px) {
-   .quote { font-size: 18px; }
+   .quote { font-size: 24px; }
 }
 @media only screen and (max-height: 800px) and (min-height: 601px) {
-   .quote { font-size: 12px; }
+   .quote { font-size: 18px; }
 }
 @media only screen and (max-height: 600px) {
-   .quote { font-size: 9px; }
+   .quote { font-size: 12px; }
 }
