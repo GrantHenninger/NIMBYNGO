@@ -1,6 +1,11 @@
 body {
   font-family:"Times New Roman", Georgia, Serif;
   text-align: center;
+  background-image: url("images/erangel.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center center;
+  background-size: cover;
 }
 
 a {
@@ -10,12 +15,13 @@ a {
 .square {
   float:left;
   position: relative;
-  width: 17.5%;
+  width: 19%;
   padding-bottom: 17.5%; /* = width for a 1:1 aspect ratio */
   /* margin:1.66%; */
   overflow:hidden;
   border-style:solid;
-  border-width:1px;
+  border-width:2px;
+  border-color:#0d5f61;
 }
 
 .quote {
@@ -27,6 +33,9 @@ a {
   vertical-align:middle;
   font-size:24px;
   font-weight:bold;
+  color:#df7e00;
+  text-shadow: 1px 1px black;
+  text-transform: uppercase;
 }
 
 #title {
@@ -34,6 +43,10 @@ a {
   font-size:48px;
   width:100%;
   float:left;
+  font-weight:bold;
+  color:#df7e00;
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
 }
 
 #body {
@@ -46,6 +59,7 @@ a {
   width:100%;
   float:left;
   clear:both;
+  margin-top:10px;
   }
 
 @media only screen and (max-height: 1000px) and (min-height: 801px) {
