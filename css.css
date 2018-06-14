@@ -38,6 +38,22 @@ a {
   text-transform: uppercase;
 }
 
+.quote.background {
+  position:absolute;
+  height:80%; /* = 100% - 2*10% padding */
+  width:90%; /* = 100% - 2*5% padding */
+  padding: 10% 5%;
+  text-align:center;
+  vertical-align:middle;
+  font-size:24px;
+  font-weight:bold;
+  color:#df7e00;
+  text-shadow: 1px 1px black;
+  text-transform: uppercase;
+  background-image: url(images/wheel112.png);
+  background-size: 100% 100%;
+}
+
 #title {
   text-align:center;
   font-size:48px;

@@ -1,0 +1,196 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  
+  <title>Praise be the Wheel</title>
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="squareThis.js"></script>
+
+  <script type="text/javascript">
+    var quotes = [
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof",
+      "Will is on the roof"
+    ];
+
+    // Thanks Stack Overflow! http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+
+    shuffle(quotes);
+
+    $(document).ready(function () {
+        for (n = 0; n < 24; n++) {
+            $( ".quote" + n ).html( quotes[n] );
+        }
+    });
+
+  </script>
+
+ <script>
+    $(document).ready(function() {
+      $( ".quote" ).click(function() {
+        $( this ).toggleClass("background");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      var $bodyheight = $( window ).height();
+      $( "#body" ).css('width', $bodyheight+"px");
+    });
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="css.css">
+
+</head>
+
+<body>
+  
+<div id="body">
+
+<div id="title">Praise be the Wheel</div>
+
+<div class="square">
+  <div class="quote quote0"></div>
+</div>
+<div class="square">
+  <div class="quote quote1"></div>
+</div>
+<div class="square">
+    <div class="quote quote2"></div>
+</div>
+<div class="square">
+    <div class="quote quote3"></div>
+</div>
+<div class="square">
+    <div class="quote quote4"></div>
+</div>
+<div class="square">
+    <div class="quote quote5"></div>
+</div>
+<div class="square">
+    <div class="quote quote6"></div>
+</div>
+<div class="square">
+    <div class="quote quote7"></div>
+</div>
+<div class="square">
+    <div class="quote quote8"></div>
+</div>
+<div class="square">
+    <div class="quote quote9"></div>
+</div>
+<div class="square">
+    <div class="quote quote10"></div>
+</div>
+<div class="square">
+    <div class="quote quote11"></div>
+</div>
+<div class="square">
+    <div class="quote" style="background-image:url(images/wheel112.png);background-size: 100% 100%;"></div>
+</div>
+<div class="square">
+    <div class="quote quote12"></div>
+</div>
+<div class="square">
+    <div class="quote quote13"></div>
+</div>
+<div class="square">
+    <div class="quote quote14"></div>
+</div>
+<div class="square">
+  <div class="quote quote15"></div>
+</div>
+<div class="square">
+  <div class="quote quote16"></div>
+</div>
+<div class="square">
+  <div class="quote quote17"></div>
+</div>
+<div class="square">
+ <div class="quote quote18"></div>
+</div>
+<div class="square">
+  <div class="quote quote19"></div>
+</div>
+<div class="square">
+  <div class="quote quote20"></div>
+</div>
+<div class="square">
+  <div class="quote quote21"></div>
+</div>
+<div class="square">
+  <div class="quote quote22"></div>
+</div>
+<div class="square">
+  <div class="quote quote23"></div>
+</div>
+
+</div>
+
+<div id="footer">
+
+<div style="width:100%;background-color:#222d65;text-align:center;color:white;">
+If you like Murder Boys Bingo, please support it by making a contribution to <a href="https://www.grantforanaheim.com/">Grant Henninger's campaign for Anaheim City Council.</a><br />
+<a href="https://www.grantforanaheim.com/"><img style="height:100px;" src="https://d3n8a8pro7vhmx.cloudfront.net/grantforanaheim/sites/1/meta_images/original/GrantHenninger_Logo_2color_dark_background.png?1503603292"></a>
+</div>
+
+</div>
+
+</body>
+</html>
